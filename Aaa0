@@ -1,0 +1,11 @@
+# include<stdio.h>
+
+int main( ) {
+  int a,b,c,d=4;
+  scanf("%d",&b);
+  a=b*b;
+  printf("%d\n", a);
+  c=b*d;
+  printf("%d", c);
+  return 0;
+}
