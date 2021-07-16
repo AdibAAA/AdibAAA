@@ -1,0 +1,31 @@
+on online compiler
+
+#include <stdio.h>
+
+int add(int x,int y){
+  return x+y;
+}
+int multi(int x,int y){
+  return x*y;
+}
+int sub(int x,int y){
+  return x-y;
+}
+int div(int x,int y){
+  if (x>=y){
+    return x/y;
+  }
+  else {
+    return y/x;
+  }
+}
+int main(void) {
+  int a,b,c,d,e,f;
+  scanf("%d%d",&a,&b);
+  c=add(a,b);
+  d=multi(a,b);
+  e=sub(a,b);
+  f=div(a,b);
+  printf("Addition=%d\nMultiplication=%d\nSubstraction=%d\nDivition=%d",c,d,e,f);
+  return 0;
+}
