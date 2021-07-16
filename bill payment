@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main( ) {
+  int  a,b,c,d;
+  scanf("%d%d",&a,&b);
+  if(a>b){
+    c=a-b;
+    printf("pending=%d",c);
+  } 
+  else printf("bill payed\n");
+  d=b-a;
+  printf("extra=%d",d);
+  
+  return 0;
+}
