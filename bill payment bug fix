@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main( ) {
+  int  a,b,c,d;
+  scanf("%d%d",&a,&b);
+  printf("Bill=%d\nPayment=%d\n",a,b);
+  if(a>b){
+    c=a-b;
+    printf("pending=%d\n",c);
+  } 
+  else printf("bill payed\n");
+  if(a<b){
+  d=b-a;
+  printf("extra=%d\n",d);}
+  
+  return 0;
+}
