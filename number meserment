@@ -1,0 +1,52 @@
+#include <stdio.h>
+int main (){
+  int a, b, c;
+  printf("input 1st number: ");
+  scanf("%d", &a);
+  printf("input 2nd number: ");
+  scanf("%d", &b);
+  printf("input 3rd number: ");
+  scanf("%d", &c);
+  if (a>b){
+    if(a>c){
+      printf("%d is bigger than both %d and %d", a,b,c);
+    }else if (c>a){
+      printf("%d is bigger than both %d and %d",c,a,b);
+    }
+  }else if (b>a){
+    if(b>c){
+      printf("%d is bigger than both %d and %d", b,a,c);
+    }else if (c>b){
+      printf("%d is bigger than both %d and %d",c,a,b);
+    }
+  }
+  else if (a==b){
+    if (c>a)
+    printf("%d is bigger than both %d and %d",c,a,b);
+    else if(c<a)
+    printf("both %d and %d are bigger than %d",a,b,c);
+    }
+    else if (a==c){
+     if(a>b){
+      printf("both %d and %d are bigger than %d",a,c,b);
+    }
+    else if (b>a){
+      printf("%d is bigger than both %d and %d",b,a,c);
+    }
+   }
+   else if (b==c){
+     if(a<b){
+     printf("both %d and %d are bigger than %d",c,a,b);
+
+     }
+     else if (a>b){
+     printf("%d is bigger than both %d and %d",b,a,c);
+     }
+   }
+   if (a==b){
+     if(c==b){
+     printf("all number are equal"); 
+     }
+   }
+     return 0;
+}
